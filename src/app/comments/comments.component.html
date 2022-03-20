@@ -1,0 +1,17 @@
+<div class="container">
+    <p class="text-center"><a href="https://www.lipsum.com/feed/html" target="_blank">Generate text</a></p>
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()" class="form">
+        <input formControlName="name" type="text" placeholder="enter a fake name" required/>
+        <input formControlName="email" type="email" placeholder="enter a fake email" required/>
+        <textarea formControlName="body" placeholder="enter a fake comment" required></textarea>
+        <button class="btn-primary" type="submit" [disabled]="!commentForm.valid">Add</button>
+    </form>
+    <hr>
+    <h2>comment list</h2>
+    <div class="grid">
+        <div *ngFor="let comment of allcomments" class="comment">
+            <span class="name">{{comment.name}}</span>
+            <p class="body">{{comment.body}}</p>
+        </div>
+    </div>
+</div>

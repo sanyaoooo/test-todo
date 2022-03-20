@@ -1,0 +1,31 @@
+.container {
+    padding: 2em 20px;
+    margin: auto;
+    max-width: 960px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+.form input, .form textarea {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+}
+.body {
+    box-shadow: 0 0 1px #000000ff;
+    padding: 7px 10px;
+    margin: 5px 0;
+    min-height: calc(100% - 40px);
+}
+.name {
+    font-size: 14px;
+    color: #999;
+}
