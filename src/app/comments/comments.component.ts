@@ -37,7 +37,7 @@ export class CommentsComponent {
     console.log(this.commentForm.value)
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 2c2bad61784dd029169ec34b9542429ed4a123f064f7c12e806cccd99c5aac40'
+      'Authorization': 'token'
     });
     let options = {
       headers
