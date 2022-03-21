@@ -12,6 +12,7 @@ import { TodolistComponent } from './todolist/todolist.component';
 const routes: Routes = [
   { path: 'comments', component: CommentsComponent },
   { path: 'todolist', component: TodolistComponent },
+  { path: '**',  redirectTo: '/todolist', pathMatch: 'full' }
 ]
 
 @NgModule({

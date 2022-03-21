@@ -7,7 +7,7 @@
         <button class="btn-primary" type="submit" [disabled]="!commentForm.valid">Add</button>
     </form>
     <hr>
-    <h2>comment list</h2>
+    <h2>comments list</h2>
     <div class="grid">
         <div *ngFor="let comment of allcomments" class="comment">
             <span class="name">{{comment.name}}</span>
