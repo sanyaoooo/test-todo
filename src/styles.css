@@ -3,6 +3,12 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
   }
+  .text-sm {
+    font-size: 14px;
+  }
+  .mt-3 {
+    margin-top: 2em;
+  }
   .text-center {
     text-align: center;
   }
